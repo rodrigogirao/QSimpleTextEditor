@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Editor</class>
+ <widget class="QMainWindow" name="Editor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Editor</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="documentMode">
+       <bool>true</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>742</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPrograma">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionNovo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionSavar_como"/>
+    <addaction name="actionFechar"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="action_Negrito"/>
+    <addaction name="actionSublinhar"/>
+    <addaction name="action_Italico"/>
+    <addaction name="actionFonte"/>
+    <addaction name="actionTamanho"/>
+   </widget>
+   <addaction name="menuPrograma"/>
+   <addaction name="menuEditar"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNovo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionSalvar"/>
+   <addaction name="actionSavar_como"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopia"/>
+   <addaction name="actionCola"/>
+   <addaction name="actionRecorta"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="separator"/>
+   <addaction name="action_Negrito"/>
+   <addaction name="actionSublinhar"/>
+   <addaction name="actionTamanho"/>
+   <addaction name="actionFonte"/>
+   <addaction name="action_Italico"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/6098_32x32.png</normaloff>:/recursos/6098_32x32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Abrir</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/1295_64x64.png</normaloff>:/recursos/1295_64x64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sal&amp;var</string>
+   </property>
+  </action>
+  <action name="actionFechar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/7660_64x64.png</normaloff>:/recursos/7660_64x64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fechar</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/cloud_64x64.png</normaloff>:/recursos/cloud_64x64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="action_Negrito">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/Text-Formatting-Bold-icon.png</normaloff>:/recursos/Text-Formatting-Bold-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Negrito</string>
+   </property>
+   <property name="toolTip">
+    <string>negrito</string>
+   </property>
+  </action>
+  <action name="actionSublinhar">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/Actions-format-text-underline-icon.png</normaloff>:/recursos/Actions-format-text-underline-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sublinhar</string>
+   </property>
+   <property name="toolTip">
+    <string>Sublinhar</string>
+   </property>
+  </action>
+  <action name="actionTamanho">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/Text-Formatting-Increase-font-icon.png</normaloff>:/recursos/Text-Formatting-Increase-font-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Tamanho+</string>
+   </property>
+   <property name="toolTip">
+    <string>Tamanho+</string>
+   </property>
+  </action>
+  <action name="actionFonte">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/Text-Formatting-Decrease-font-icon.png</normaloff>:/recursos/Text-Formatting-Decrease-font-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fonte-</string>
+   </property>
+   <property name="toolTip">
+    <string>Fonte-</string>
+   </property>
+  </action>
+  <action name="action_Italico">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/Text-itailc-icon.png</normaloff>:/recursos/Text-itailc-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>$Italico</string>
+   </property>
+   <property name="toolTip">
+    <string>Italico</string>
+   </property>
+  </action>
+  <action name="actionNovo">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/File-Open-icon.png</normaloff>:/recursos/File-Open-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/8454_64x64.png</normaloff>:/recursos/8454_64x64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>desfaz</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/8436_64x64.png</normaloff>:/recursos/8436_64x64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="toolTip">
+    <string>Refaz</string>
+   </property>
+  </action>
+  <action name="actionCopia">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/Actions-edit-copy-icon.png</normaloff>:/recursos/Actions-edit-copy-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copia</string>
+   </property>
+   <property name="toolTip">
+    <string>Copia</string>
+   </property>
+  </action>
+  <action name="actionCola">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/past-file-icon.png</normaloff>:/recursos/past-file-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cola</string>
+   </property>
+   <property name="toolTip">
+    <string>Cola</string>
+   </property>
+  </action>
+  <action name="actionRecorta">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/recorta_1925_64x64.png</normaloff>:/recursos/recorta_1925_64x64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recorta</string>
+   </property>
+   <property name="toolTip">
+    <string>Recorta</string>
+   </property>
+  </action>
+  <action name="actionSavar_como">
+   <property name="icon">
+    <iconset resource="recursos.qrc">
+     <normaloff>:/recursos/Actions-document-save-all-icon.png</normaloff>:/recursos/Actions-document-save-all-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Savar como</string>
+   </property>
+   <property name="toolTip">
+    <string>Savar como</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

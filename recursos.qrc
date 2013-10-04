@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/box_64x64.png</file>
+        <file>recursos/business_64x64.png</file>
+        <file>recursos/clapperboard_64x64.png</file>
+        <file>recursos/cloud_64x64.png</file>
+        <file>recursos/drawer_64x64.png</file>
+        <file>recursos/envelope_64x64.png</file>
+        <file>recursos/gift_64x64.png</file>
+        <file>recursos/preview_by_petalart.png</file>
+        <file alias="ABRIR">recursos/search_64x64.png</file>
+        <file>recursos/shopping_ bag_64x64.png</file>
+        <file>recursos/shopping_ basket_64x64.png</file>
+        <file alias="SALVAR">recursos/tag_sale_64x64.png</file>
+        <file>recursos/wallet_64x64.png</file>
+        <file>recursos/277_64x64.png</file>
+        <file>recursos/1295_64x64.png</file>
+        <file>recursos/6098_32x32.png</file>
+        <file>recursos/7660_64x64.png</file>
+        <file>recursos/Actions-format-text-underline-icon.png</file>
+        <file>recursos/Image-Edition-Tools-Text-icon.png</file>
+        <file>recursos/Text-Formatting-Bold-icon.png</file>
+        <file>recursos/Text-Formatting-Decrease-font-icon.png</file>
+        <file>recursos/Text-Formatting-Increase-font-icon.png</file>
+        <file>recursos/Text-itailc-icon.png</file>
+        <file>recursos/8454_64x64.png</file>
+        <file>recursos/8436_64x64.png</file>
+        <file>recursos/File-Open-icon.png</file>
+        <file>recursos/File-Copy-icon.png</file>
+        <file>recursos/Actions-edit-copy-icon.png</file>
+        <file>recursos/past-file-icon.png</file>
+        <file>recursos/recorta_1925_64x64.png</file>
+        <file>recursos/Actions-document-save-all-icon.png</file>
+    </qresource>
+</RCC>
