@@ -5,7 +5,7 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include <iostream>
-#include <QPlainTextEdit>
+#include <QTextEdit>
 #include <QtDebug>
 
 namespace Ui {
